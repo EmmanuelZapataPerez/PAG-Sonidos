@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Pagina Sonidos</title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<div class="u8">
+<audio id="primero" src="1.mp3" preload loop></audio>
+<audio id="primero1" src="2.mp3" preload loop></audio>
+<audio id="primero2" src="3.mp3" preload loop></audio>
+<audio id="primero3" src="4.mp3" preload loop></audio>
+<audio id="primero4" src="5.mp3" preload loop></audio>
+<button onclick="document.getElementById('primero').play()" class="uu"><font size="10">Sonido 1</font></button>
+<button onclick="document.getElementById('primero1').play()" class="u1"><font size="10">Sonido 2</font></button>
+<button onclick="document.getElementById('primero2').play()" class="u2"><font size="10">Sonido 3</font></button>
+<button onclick="document.getElementById('primero3').play()" class="u3"><font size="10">Sonido 4</font></button>
+<button onclick="document.getElementById('primero4').play()" class="u4"><font size="10">Sonido 5</font></button>
+
+<button onclick="parar()" class="u7"><font size="10">Pausa</font></button>
+<button onclick="subir()" class="u5"><font size="10">Subir</font></button>
+<button onclick="bajar()" class="u6"><font size="10">Bajar</font></button>
+<script type="text/javascript">
+	function parar(){
+		document.getElementById('primero').pause()
+		document.getElementById('primero1').pause()
+		document.getElementById('primero2').pause()
+		document.getElementById('primero3').pause()
+		document.getElementById('primero4').pause()
+	}
+function subir(){
+		document.getElementById('primero').volume += .1
+		document.getElementById('primero1').volume += .1
+		document.getElementById('primero2').volume += .1
+		document.getElementById('primero3').volume += .1
+		document.getElementById('primero4').volume += .1
+	}
+	function bajar(){
+		document.getElementById('primero').volume -= .1
+		document.getElementById('primero1').volume -= .1
+		document.getElementById('primero2').volume -= .1
+		document.getElementById('primero3').volume -= .1
+		document.getElementById('primero4').volume -= .1
+	}
+</script>
+</div>
+</body>
+</html>
